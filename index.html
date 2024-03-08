@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> nay en ny </title>
+    <title>nay en ny</title>
     <link rel="icon" href="https://github.com/k0ndem0rr/k0ndem0rr.github.io/blob/main/emotes.png?raw=true">
     <style>
         .tiktok-container {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando la pantalla es vertical */
         }
         .tiktok-embed {
             display: inline-block;
             vertical-align: top;
+            max-width: calc(50% - 10px); /* Establece el ancho del elemento al 50% del contenedor con un margen de 10px entre ellos */
+            margin-bottom: 10px; /* Añade un margen inferior entre los elementos */
+        }
+        @media screen and (max-width: 600px) {
+            .tiktok-embed {
+                max-width: 100%; /* Establece el ancho al 100% en pantallas pequeñas (orientación vertical) */
+            }
         }
     </style>
 </head>
@@ -18,8 +26,7 @@
     <div class="tiktok-container">
         <blockquote class="tiktok-embed" 
                     cite="https://www.tiktok.com/@naygar24/video/7335196298267659552" 
-                    data-video-id="7335196298267659552" 
-                    style="max-width: 605px;min-width: 325px;" > 
+                    data-video-id="7335196298267659552"> 
             <section> 
                 <a target="_blank" title="@naygar24" href="https://www.tiktok.com/@naygar24?refer=embed">@naygar24</a> D1 
                 <a title="nyc" target="_blank" href="https://www.tiktok.com/tag/nyc?refer=embed">#nyc</a> 
@@ -32,8 +39,7 @@
 
         <blockquote class="tiktok-embed" 
                     cite="https://www.tiktok.com/@naygar24/video/7343342571453779233" 
-                    data-video-id="7343342571453779233" 
-                    style="max-width: 605px;min-width: 325px;" > 
+                    data-video-id="7343342571453779233"> 
             <section> 
                 <a target="_blank" title="@naygar24" href="https://www.tiktok.com/@naygar24?refer=embed">@naygar24</a> D2 🧙🏻‍♂️ 
                 <a title="nyc" target="_blank" href="https://www.tiktok.com/tag/nyc?refer=embed">#nyc</a> 
